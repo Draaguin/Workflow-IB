@@ -1,0 +1,18 @@
+Preciso de um script em python para uma aplicação de fluxo de aprovação.
+A ideia que seja de forma web onde o usuário irá preencher um formulário e esse formulário irá ser enviado para o primeiro aprovador,
+ele podendo aprovar, reprovar, ou solictar um revisão, voltando para o solicitante para alterar alguma informação, e com comentários do porque
+a solicitação de revisão.
+Seria no total 5 aprovadores, de forma que só chega no quinto quando o quarto aprovar, e o formulário web do solicitante seria assim :
+
+Um dropdown chamado "Solicitante" com as opções : "Eduardo Araujo", "Nicolau Peliascov", "Carla Cozzarelli", "Mario Silva"
+Um campo para preencher a data da solicitação com D/M/Y
+Um campo de texto sem limite de caractere chamado "Descrição do IB"
+Um campo de texto sem limite de caractere chamado "Nº do IB"
+E um anexo de arquivo.
+
+Esse anexo de arquivo normalmente será um word, podendo ter exceções, esse word precisa se editável pelos aprovadores e manter a edição
+realizada para as etapas seguintes, pensei na possibilidade de usar a plataforma de compartilhamento do google drive, então seria necessário
+que desse permissão no arquivo para todos os aprovadores de forma automática se for o caso.
+
+Para os aprovadores a ideia é que seja enviado um link para o email deles solicitando a revisão, onde só é possível aprovar a partide deste
+link, também sem possível reprovar ou solicitar uma revisão.

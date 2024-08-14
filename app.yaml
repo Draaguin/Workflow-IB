@@ -1,0 +1,7 @@
+runtime: python39
+entrypoint: gunicorn -b :$PORT app:app
+
+# Opcional: escopo de autenticação, etc.
+env_variables:
+  GOOGLE_OAUTH_CLIENT_ID: "564667358550-75m5bua0i4c4ubgedcks7av1nv7sj0k3.apps.googleusercontent.com"
+  GOOGLE_OAUTH_CLIENT_SECRET: "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"
